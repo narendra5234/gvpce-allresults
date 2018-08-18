@@ -1,0 +1,24 @@
+<html>
+   <body>
+      <form action = "{{url_for('result')}}" method = "POST">
+      <center>  <div class="header" style="width: 1003px; height: 130px">
+         <h1>
+           <img src="{{url_for('static', filename='banner.jpg')}}" /><br>
+         </h1><br><br>
+        <div><b>Roll No: </b><input type = "text" name = "Name" placeholder="enter your complete roll no" /></div><br>
+<div ><b>Course:</b>
+<div> <input type="radio" name="course" value="B.Tech" checked> B.Tech<br>
+  <input type="radio" name="course" value="M.Tech"> M.Tech<br>
+  <input type="radio" name="course" value="M.C.A"> M.C.A<br></div>
+</div><br>
+<div><b>Other Details:</b>
+<div>  <input type="radio" name="other" value="Regular" checked>Regular <br>
+  <input type="radio" name="other" value="Supplementary"> Supple<br>
+  <input type="radio" name="other" value="Supple+Regular"> Supple+Regular<br></div>
+</div><br>
+        <div><p><input type = "submit" value = "submit" /></p></div>
+        </center>
+      </form>
+
+   </body>
+</html>
